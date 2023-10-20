@@ -5,8 +5,7 @@ import requests
 url = "https://stelycube.fr/p/les-packs"  # Remplacez l'URL par celle de la ressource que vous souhaitez interroger.
 
 # Effectuer une requête HTTP GET pour obtenir la ressource et ses en-têtes
-# Optionnel: verify=False
-response = requests.get(url)
+response = requests.get(url, verify=False)
 
 
 # Vérifier si la requête a réussi
